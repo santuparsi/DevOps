@@ -1,0 +1,5 @@
+chage web deploy 4.0
+run windows batch command 
+@echo off
+"C:\Program Files (x86)\IIS\Microsoft Web Deploy V3\msdeploy.exe" -verb:sync -source:package="D:\Azure\DeployApp\DeployApp\obj\Release\Package\DeployApp.zip"  -dest:auto,computerName=192.168.56.1 -setParam:name="IIS Web Application Name",value="TestJenkins"
+echo Deployed successfully:Naviagate to 192.168.56.1:8087

@@ -1,0 +1,13 @@
+node
+{
+    stage 'check out'
+        git 'https://github.com/mohamedessaks/FSDProjectManagerUI.git'   
+    
+    stage ('Npm Install'){
+            bat 'npm install'
+    }
+        
+    stage ('Build'){
+        bat 'npm run build'
+    }
+}

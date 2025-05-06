@@ -1,0 +1,14 @@
+   node {
+    stage 'check out'
+    git'https://github.com/mohamedessaks/FSDProjectManagerAPI.git'
+    
+    stage 'restore'
+    bat 'C:/Nuget/nuget.exe restore ProjectManagerWebApi.sln'
+    
+    stage 'build'
+    bat "\"${tool 'msbuild'}\" ProjectManagerWebApi.sln /p:Configuration=Debug /p:OutputPath=C:/Users/Admin/Desktop/deploy /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+    
+    stage 'deploy'
+    bat 'C:/MSDeploy/msdeploy.exe -verb:sync -source:contentPath=C:/Users/Admin/Desktop/deploy -dest:contentPath=C:/Users/Admin/Desktop/iisdeploy'
+    
+}

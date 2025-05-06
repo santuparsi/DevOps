@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-dotnetcore-deployement
+spec:
+  selector:
+    matchLabels:
+      app: my-dotnetcore-pod
+  template:
+    metadata:
+      labels:
+        app: my-dotnetcore-pod
+    spec:
+      containers:
+      - name: my-dotnetcore-container
+        image: hello-aspnetcore:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80

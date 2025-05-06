@@ -1,0 +1,7 @@
+1.npm install
+2.npm run ng test
+3.npm run ng -- build --prod --base-href /myapp/ or
+npm run ng -- build --prod
+4.@echo on
+xcopy /s "%CD%\dist\TaskManagerUI" "C:\Dest" 
+C:\Windows\System32\iisreset.exe

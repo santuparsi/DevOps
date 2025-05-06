@@ -1,0 +1,97 @@
+Scaffold-DbContext "Server=.\DOTNET;Database=MarathonVolunteerDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+--------------------------------------------------------------------------------------------------------------
+FROM node:latest as node
+LABEL author="Creative Coderzz"
+WORKDIR /app
+COPY . .
+RUN npm install
+ARG env=prod
+RUN npm run build --prodnpm 
+
+FROM nginx:alpine
+VOLUME /var/cache/nginx
+COPY --from=node /app/dist /usr/share/nginx/html
+
+dockerx build -t my-test-mnmt:test-image-name .
+
+dockerx run -d -p 80:80 -v my-test-mnmt --hostname "img-name-testing" --name "mnmt-text-container" my-test-mnmt
+-------------------------------------------------------------------------------------------------------------------------------
+
+FROM nginx:stable-alpine
+LABEL version="1.0"
+
+COPY nginx.conf /etc/nginx/nginx.conf
+
+WORKDIR /usr/share/nginx/html
+COPY dist/test-app/ .
+------------------------
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    server {
+        listen 8089;
+        server_name  localhost;
+
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+        include /etc/nginx/mime.types;
+
+        gzip on;
+        gzip_min_length 1000;
+        gzip_proxied expired no-cache no-store private auth;
+        gzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+    }
+}
+----------------------
+dockerx image build -t mnmt-angular-app .
+
+dockerx run -d -p 8089:8089 -v mnmt-angular-app --hostname "mnmt-angular-app23" --name "mnmt-text-container23" mnmt-angular-app
+
+-----------------
+Docker Hub Account:
+creativecoderzz
+123@aA123
+-----------------
+Azure Account:
+akshayvijayvargiya116@gmail.com
+123@aA123
+------------------------------------------
+Docker Hub 2nd Account:
+creativecoderzzapi
+123@aA123
+iamdead06@yahoo.co.in
+-------------------------------
+Run Docker Image from Hub
+
+dockerx login -u "creativecoderzz" -p "123@aA123"
+dockerx image build -t creativecoderzz/mnmt-angular-app .
+dockerx push creativecoderzz/mnmt-angular-app
+dockerx run -d -p 8089:8089 -v creativecoderzz/mnmt-angular-app --hostname "mnmt-angular-app23" --name "mnmt-text-container23" creativecoderzz/mnmt-angular-app
+-----------------------------------------------------------------------
+dockerx image build -t ccmarathon .
+dockerx run -d -p 8089:8089 -v ccmarathon --hostname "ccmarathon" --name "ccmarathon" ccmarathon
+------------------------------------------------------------------------
+dockerx image build -t ccmarathonapi .
+dockerx run -d -p 8091:80 -v ccmarathonapi --hostname "ccmarathonapi" --name "ccmarathonapi" ccmarathonapi
+-----------------------------------------------------------------------
+dockerx login -u "creativecoderzzapi" -p "123@aA123"
+dockerx image build -t creativecoderzzapi/ccmarathonapi .
+dockerx push creativecoderzzapi/ccmarathonapi
+dockerx run -d -p 8091:80 -v creativecoderzzapi/ccmarathonapi --hostname "ccmarathonapi" --name "ccmarathonapi" creativecoderzzapi/ccmarathonapi
+------------------------------------------------------------------------
+dockerx image build -t creativecoderzz/ccmarathon .
+dockerx push creativecoderzz/ccmarathon
+dockerx run -d -p 8089:8089 -v creativecoderzz/ccmarathon --hostname "ccmarathon" --name "ccmarathon" creativecoderzz/ccmarathon
+
+-----------------------------------------------------------------------
+JENKINS
+ccmarathon
+123@aA123

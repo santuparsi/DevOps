@@ -1,0 +1,14 @@
+node {
+     stage 'Checkout Code'
+        git credentialsId: '984eb117-d390-4b8d-b516-5ed668e0d552', url: 'git@172.18.2.18:OnePayNilanjan/717874-Hackathon-OnePayFrontend.git' 
+     stage 'Restore node modules'
+         bat 'cd OnePay & npm install'
+         bat ""
+     stage 'Build'
+        bat "cd OnePay & npm run -- build --base-href /onepay/"
+      stage 'Test'
+        bat "cd OnePay & npm run ng test -- --watch false"
+      stage 'Deploy'
+        bat '"C:\\Program Files\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe" -verb:sync -source:contentPath="%CD%\\OnePay\\dist\\OnePay" -dest:contentPath="Default Web Site/OnePay" -enableRule:AppOffline;DoNotDeleteRule'
+        
+    }

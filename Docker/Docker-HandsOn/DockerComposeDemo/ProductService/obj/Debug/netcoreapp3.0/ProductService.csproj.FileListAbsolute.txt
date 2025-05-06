@@ -1,0 +1,10 @@
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\bin\Debug\netcoreapp3.0\appsettings.Development.json
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\bin\Debug\netcoreapp3.0\appsettings.json
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\bin\Debug\netcoreapp3.0\ProductService.exe
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\obj\Debug\netcoreapp3.0\ProductService.csprojAssemblyReference.cache
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\obj\Debug\netcoreapp3.0\staticwebassets\ProductService.StaticWebAssets.Manifest.cache
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\obj\Debug\netcoreapp3.0\staticwebassets\ProductService.StaticWebAssets.xml
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\obj\Debug\netcoreapp3.0\ProductService.AssemblyInfoInputs.cache
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\obj\Debug\netcoreapp3.0\ProductService.AssemblyInfo.cs
+D:\CTS\Material\Docker\DockerHandsOn\DockerComposeDemo\ProductService\obj\Debug\netcoreapp3.0\ProductService.RazorTargetAssemblyInfo.cache

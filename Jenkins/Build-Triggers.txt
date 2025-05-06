@@ -1,0 +1,6 @@
+Build periodically can be used to run on standard jobs (if you have a team setup which has deployment to master every evening). Then you can set up the test jobs to build periodically late evenings at a fixed time (also the test job can be triggered based on success as explained in (1)
+ex: */2 * * * *  which represents an interval of two minutes
+Poll SCM is nothing but checking if there is new code committed in your repository and build based on that.
+ex: */2 * * * *  which represents an interval of two minutes
+
+Webhook:https://jenkins.princeton.edu/github-webhook/

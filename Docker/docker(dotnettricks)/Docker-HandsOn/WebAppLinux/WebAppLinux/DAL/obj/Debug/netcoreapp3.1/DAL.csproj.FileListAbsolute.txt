@@ -1,0 +1,12 @@
+C:\Code\Weekend\WebAppLinux\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Code\Weekend\WebAppLinux\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Code\Weekend\WebAppLinux\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+C:\Code\Weekend\WebAppLinux\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+C:\Code\Weekend\WebAppLinux\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Code\Weekend\WebAppLinux\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache

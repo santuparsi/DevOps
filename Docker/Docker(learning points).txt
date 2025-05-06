@@ -1,0 +1,8 @@
+images are package softwares that are ready to run
+What is detached mode?
+Docker images are publish in a docker registry
+Docker hub is a public registry
+Docker file is required to create Docker Image.
+
+# Docker Questions?
+can we see the app folder inside the container?

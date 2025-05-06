@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LNeJ+CQxC2fy/VFEJEbJXFApsd9UVUCzzSZn1I4WgaZLbuthj+jpXxMmL0kSbFuFoJgjwfIZf/NtKs/ovyuzcQ==",
+  "success": true,
+  "projectFilePath": "D:\\Batch-Kubernetes\\MyMVCDockerApp\\MyMVCDockerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santhosh\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}

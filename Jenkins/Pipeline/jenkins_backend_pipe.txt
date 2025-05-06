@@ -1,0 +1,13 @@
+node {
+     stage 'Checkout Code'
+        git credentialsId: '984eb117-d390-4b8d-b516-5ed668e0d552', url: 'git@172.18.2.18:OnePayNilanjan/717874-Hackathon-OnePayBackend.git' 
+     stage 'Nuget Restore'
+        bat '"C:\\Tools\\nuget.exe" restore "OnePay-Backend\\OnePay_Backend.sln"'
+     stage 'Build'
+        bat '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\MSBuild.exe" "OnePay-Backend\\OnePay-Backend\\OnePay_Backend.csproj" /t:build;package /p:configuration=Release /p:outputpath="obj\\Release" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:packagelocation="obj\\Release\\package\\onepaybackend.zip" /restore'
+     stage 'Test'
+          bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"OnePay-Backend/OnePay-Backend.Test/OnePay-Backend.Test.csproj\" --logger \"trx;LogFileName=unit_tests.xml\" --no-build"
+          step([$class: 'MSTestPublisher', testResultsFile:"**/unit_tests.xml", failOnError: true, keepLongStdio: true])
+     stage 'Deploy'
+          bat '"C:\\Program Files\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe" -verb:sync -source:package="OnePay-Backend\\OnePay-Backend\\obj\\Release\\package\\onepaybackend.zip" -dest:auto -setParam:name="IIS Web Application name",value="Default Web Site\\OnePayBackend" -enableRule:AppOffline'
+       }

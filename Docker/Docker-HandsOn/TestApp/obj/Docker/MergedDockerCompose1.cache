@@ -1,0 +1,39 @@
+services:
+  testapp:
+    build:
+      context: D:\CTS\Material\Docker\DockerHandsOn\TestApp
+      dockerfile: Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: TestApp
+      target: base
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '44378'
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: testapp:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/netcoreapp3.0/TestApp.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 61795
+      target: 80
+    - published: 44378
+      target: 443
+    tty: true
+    volumes:
+    - /d/CTS/Material/Docker/DockerHandsOn/TestApp:/app:rw
+    - /c/Users/SANTHOSH/vsdbg/vs2017u5:/remote_debugger:rw
+    - /c/Users/SANTHOSH/AppData/Roaming/ASP.NET/Https:/root/.aspnet/https:ro
+    - /c/Users/SANTHOSH/AppData/Roaming/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    - /c/Program Files/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - /c/Users/SANTHOSH/.nuget/packages:/root/.nuget/packages:ro
+    - /d/CTS/Material/Docker/DockerHandsOn/TestApp:/src:rw
+version: '3.4'

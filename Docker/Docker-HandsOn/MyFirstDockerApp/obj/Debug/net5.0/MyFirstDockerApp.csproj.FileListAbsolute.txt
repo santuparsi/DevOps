@@ -1,0 +1,16 @@
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\MyFirstDockerApp.exe
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\MyFirstDockerApp.deps.json
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\MyFirstDockerApp.runtimeconfig.json
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\MyFirstDockerApp.runtimeconfig.dev.json
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\MyFirstDockerApp.dll
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\ref\MyFirstDockerApp.dll
+D:\Batch-Kubernetes\MyFirstDockerApp\bin\Debug\net5.0\MyFirstDockerApp.pdb
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.csproj.AssemblyReference.cache
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.AssemblyInfoInputs.cache
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.AssemblyInfo.cs
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.csproj.CoreCompileInputs.cache
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.dll
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\ref\MyFirstDockerApp.dll
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.pdb
+D:\Batch-Kubernetes\MyFirstDockerApp\obj\Debug\net5.0\MyFirstDockerApp.genruntimeconfig.cache

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment1
+spec:
+  selector:
+    matchLabels:
+      app: nginx-pod1
+  template:
+    metadata:
+      labels:
+        app: nginx-pod1
+    spec:
+      containers:
+      - name: ng-container1
+        image: nginx:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80

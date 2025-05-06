@@ -1,0 +1,31 @@
+Agile
+Scrum
+Sprint
+Scrum-Master
+Product-Owner
+Team Members
+Scrum Meeting(Quick call of 10 to 15 mins)
+Events
+Artifacts
+	Product-Backlogs
+	Scrum-Backlogs
+	Increment
+	Burn-Down Chart
+Rules
+Scrum Review
+Scrum Retrospective
+Increment
+Products
+Time-Box
+Productivity
+Iteratively
+Incrementally
+Story-Board
+Requirements
+Sprint planing session
+Stories
+Units
+Backlogs(Client requirments)
+Prioritize
+Story-Points
+Scrum-Board

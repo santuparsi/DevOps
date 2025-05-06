@@ -1,0 +1,3 @@
+1.C:\Nuget\nuget.exe restore "DemoApp.sln"
+2.C:\Windows\System32\iisreset.exe
+dotnet publish --configuration "Release" "C:\Program Files (x86)\Jenkins\workspace\BackendWithPublish\DemoApp\DemoApp.csproj"  --output C:\Publish

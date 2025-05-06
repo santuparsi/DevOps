@@ -1,0 +1,13 @@
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\bin\Debug\netcoreapp3.1\Docker_ConsoleApp.exe
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.csprojAssemblyReference.cache
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.AssemblyInfoInputs.cache
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.AssemblyInfo.cs
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\bin\Debug\netcoreapp3.1\Docker_ConsoleApp.deps.json
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\bin\Debug\netcoreapp3.1\Docker_ConsoleApp.runtimeconfig.json
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\bin\Debug\netcoreapp3.1\Docker_ConsoleApp.runtimeconfig.dev.json
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\bin\Debug\netcoreapp3.1\Docker_ConsoleApp.dll
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\bin\Debug\netcoreapp3.1\Docker_ConsoleApp.pdb
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.csproj.CoreCompileInputs.cache
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.dll
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.pdb
+D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp\Docker_ConsoleApp\obj\Debug\netcoreapp3.1\Docker_ConsoleApp.genruntimeconfig.cache

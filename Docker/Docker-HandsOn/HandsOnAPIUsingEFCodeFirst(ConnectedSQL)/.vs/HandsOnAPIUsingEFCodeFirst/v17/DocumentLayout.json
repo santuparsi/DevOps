@@ -1,0 +1,394 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\handsonapiusingefcodefirst.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:handsonapiusingefcodefirst.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\prouctasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\prouctasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\iprouctasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\iprouctasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\models\\authreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:models\\authreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\entities\\ecommcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:entities\\ecommcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|d:\\client-trainings\\fint\\dotnetcore-react-080724\\api\\handson\\handsonapiusingefcodefirst\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B724DC8-D63E-4311-8DCE-7B78B5454316}|HandsOnAPIUsingEFCodeFirst.csproj|solutionrelative:entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 231,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-03T10:32:50.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DemoController.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\DemoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DemoController.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\DemoController.cs",
+              "RelativeToolTip": "Controllers\\DemoController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAACIAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:19:45.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProuctAsyncRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\ProuctAsyncRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProuctAsyncRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\ProuctAsyncRepository.cs",
+              "RelativeToolTip": "Repositories\\ProuctAsyncRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:16:57.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IProuctAsyncRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\IProuctAsyncRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IProuctAsyncRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\IProuctAsyncRepository.cs",
+              "RelativeToolTip": "Repositories\\IProuctAsyncRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAgwAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:15:51.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T11:26:22.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthReponse.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Models\\AuthReponse.cs",
+              "RelativeDocumentMoniker": "Models\\AuthReponse.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Models\\AuthReponse.cs",
+              "RelativeToolTip": "Models\\AuthReponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:12:51.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAwwGAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T07:32:12.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-07T07:14:57.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ECommContext.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\ECommContext.cs",
+              "RelativeDocumentMoniker": "Entities\\ECommContext.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\ECommContext.cs",
+              "RelativeToolTip": "Entities\\ECommContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T07:11:39.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Models\\Login.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Models\\Login.cs",
+              "RelativeToolTip": "Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:43:46.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HandsOnAPIUsingEFCodeFirst.csproj",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\HandsOnAPIUsingEFCodeFirst.csproj",
+              "RelativeDocumentMoniker": "HandsOnAPIUsingEFCodeFirst.csproj",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\HandsOnAPIUsingEFCodeFirst.csproj",
+              "RelativeToolTip": "HandsOnAPIUsingEFCodeFirst.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAxwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-07T05:43:26.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\DTOS\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "DTOS\\OrderDTO.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\DTOS\\OrderDTO.cs",
+              "RelativeToolTip": "DTOS\\OrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:32:05.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Entities\\Order.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\Order.cs",
+              "RelativeToolTip": "Entities\\Order.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAgwA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:28:22.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:25:25.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OrderRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "Repositories\\OrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:24:03.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAuwDcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:22:01.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:19:46.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:45:14.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IOrderRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\IOrderRepository.cs",
+              "RelativeToolTip": "Repositories\\IOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:44:26.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Entities\\Product.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Entities\\Product.cs",
+              "RelativeToolTip": "Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:25:03.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwBcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:56:00.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\Client-Trainings\\FINT\\DotnetCore-React-080724\\API\\HandsOn\\HandsOnAPIUsingEFCodeFirst\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAiwAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:31:13.066Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+services:
+  docker_consoleapp:
+    build:
+      context: D:\Dotnet\Material\DEVOPS\Docker\DockerHandsOn\Docker_ConsoleApp
+      dockerfile: Docker_ConsoleApp/Dockerfile
+    image: dockerconsoleapp
+version: '3.4'

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  testapp:
+    image: ${DOCKER_REGISTRY-}testapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  testapp1:
+    image: ${DOCKER_REGISTRY-}testapp1
+    build:
+      context: .
+      dockerfile: ../TestApp1/Dockerfile
+

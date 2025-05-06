@@ -1,0 +1,35 @@
+pipeline {
+ agent any
+ environment {
+  dotnet = 'C:/Program Files (x86)/dotnet/dotnet.exe'
+ }
+ stages {
+  stage('Checkout') {
+   steps {
+    git url: 'https://github.com/santuparsi/JenkinsDemo1', branch: 'master'
+   }
+  }
+  stage('Restore PACKAGES') {
+   steps {
+    bat "dotnet restore DemoApp.sln"
+   }
+  }
+  stage('Build') {
+   steps {
+    bat 'dotnet build --configuration Release'
+   }
+  }
+  stage('Reset') {
+   steps {
+    bat 'C:\\Windows\\System32\\iisreset.exe'
+   }
+  }
+   stage('Publish') {
+   steps {
+    bat 'dotnet publish --configuration Release --output C:\\inetpub\\wwwroot\\Backend'
+   }
+  }
+   
+ }
+}
+

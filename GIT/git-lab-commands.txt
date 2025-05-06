@@ -1,0 +1,11 @@
+updated from remote repository to forked repository
+==================================================
+git remote -v
+# Add upstream
+git remote add upstream https://github.com/ThinkR-open/attachment.git(remote path)
+# List distant connections to verify upstream has been added
+git remote -v
+# Retrieve commits of the upstream
+git fetch upstream
+
+git pull upstream master

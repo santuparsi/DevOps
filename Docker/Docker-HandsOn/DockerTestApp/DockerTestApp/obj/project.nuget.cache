@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ktdMww/BSPlthpfydyDN9gPDvc6X7quRmo6KfTahHC/EujTyw5OT6C1Eei5KVL3cj6v3hk4+rw6T5UbZ9Vyuww==",
+  "success": true,
+  "projectFilePath": "D:\\CTS\\Material\\DEVOPS\\Docker\\DockerHandsOn\\DockerTestApp\\DockerTestApp\\DockerTestApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SANTHOSH\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

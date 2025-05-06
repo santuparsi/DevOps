@@ -1,0 +1,13 @@
+C:\Code\Weekend\mydockerconsole\bin\Debug\netcoreapp3.1\mydockerconsole.exe
+C:\Code\Weekend\mydockerconsole\bin\Debug\netcoreapp3.1\mydockerconsole.deps.json
+C:\Code\Weekend\mydockerconsole\bin\Debug\netcoreapp3.1\mydockerconsole.runtimeconfig.json
+C:\Code\Weekend\mydockerconsole\bin\Debug\netcoreapp3.1\mydockerconsole.runtimeconfig.dev.json
+C:\Code\Weekend\mydockerconsole\bin\Debug\netcoreapp3.1\mydockerconsole.dll
+C:\Code\Weekend\mydockerconsole\bin\Debug\netcoreapp3.1\mydockerconsole.pdb
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.csprojAssemblyReference.cache
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.AssemblyInfoInputs.cache
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.AssemblyInfo.cs
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.csproj.CoreCompileInputs.cache
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.dll
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.pdb
+C:\Code\Weekend\mydockerconsole\obj\Debug\netcoreapp3.1\mydockerconsole.genruntimeconfig.cache

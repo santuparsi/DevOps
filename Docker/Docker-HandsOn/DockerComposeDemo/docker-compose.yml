@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  itemservice:
+    image: ${DOCKER_REGISTRY-}itemservice
+    build:
+      context: .
+      dockerfile: ItemService/Dockerfile
+    ports:
+       - "6658:80"
+  productservice:
+    image: ${DOCKER_REGISTRY-}productservice
+    build:
+      context: .
+      dockerfile: ProductService/Dockerfile
+    ports:
+       - "6659:80"
+

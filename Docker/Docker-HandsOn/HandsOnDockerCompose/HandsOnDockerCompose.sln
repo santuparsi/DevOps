@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductAPI", "ProductAPI\ProductAPI.csproj", "{C50DA51B-1F03-431A-A785-7975E273E186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderAPI", "OrderAPI\OrderAPI.csproj", "{F532D910-2DE7-4A81-B0D6-26F6758A5D5E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{72E671CC-56C2-4217-AF51-C9BBE7A925CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C50DA51B-1F03-431A-A785-7975E273E186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50DA51B-1F03-431A-A785-7975E273E186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50DA51B-1F03-431A-A785-7975E273E186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50DA51B-1F03-431A-A785-7975E273E186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F532D910-2DE7-4A81-B0D6-26F6758A5D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F532D910-2DE7-4A81-B0D6-26F6758A5D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F532D910-2DE7-4A81-B0D6-26F6758A5D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F532D910-2DE7-4A81-B0D6-26F6758A5D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E671CC-56C2-4217-AF51-C9BBE7A925CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E671CC-56C2-4217-AF51-C9BBE7A925CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E671CC-56C2-4217-AF51-C9BBE7A925CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E671CC-56C2-4217-AF51-C9BBE7A925CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E69716FD-593D-4FB9-BB54-057A7411E9A6}
+	EndGlobalSection
+EndGlobal
