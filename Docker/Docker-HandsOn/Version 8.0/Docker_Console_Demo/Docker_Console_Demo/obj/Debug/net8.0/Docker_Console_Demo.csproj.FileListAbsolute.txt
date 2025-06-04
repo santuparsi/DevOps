@@ -1,0 +1,15 @@
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\bin\Debug\net8.0\Docker_Console_Demo.exe
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\bin\Debug\net8.0\Docker_Console_Demo.deps.json
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\bin\Debug\net8.0\Docker_Console_Demo.runtimeconfig.json
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\bin\Debug\net8.0\Docker_Console_Demo.dll
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\bin\Debug\net8.0\Docker_Console_Demo.pdb
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.AssemblyInfoInputs.cache
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.AssemblyInfo.cs
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.csproj.CoreCompileInputs.cache
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.sourcelink.json
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.dll
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\refint\Docker_Console_Demo.dll
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.pdb
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\Docker_Console_Demo.genruntimeconfig.cache
+D:\Training-Material\Code-Bank\DEVOPS\Docker\Docker-HandsOn\Version 8.0\Docker_Console_Demo\Docker_Console_Demo\obj\Debug\net8.0\ref\Docker_Console_Demo.dll

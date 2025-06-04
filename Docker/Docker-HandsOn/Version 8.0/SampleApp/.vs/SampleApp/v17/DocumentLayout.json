@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Training-Material\\Code-Bank\\DEVOPS\\Docker\\Docker-HandsOn\\Version 8.0\\SampleApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77FEE8FB-81EF-41DB-8673-6124101159A4}|SampleApp\\SampleApp.csproj|d:\\training-material\\code-bank\\devops\\docker\\docker-handson\\version 8.0\\sampleapp\\sampleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FEE8FB-81EF-41DB-8673-6124101159A4}|SampleApp\\SampleApp.csproj|solutionrelative:sampleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Training-Material\\Code-Bank\\DEVOPS\\Docker\\Docker-HandsOn\\Version 8.0\\SampleApp\\SampleApp\\Program.cs",
+              "RelativeDocumentMoniker": "SampleApp\\Program.cs",
+              "ToolTip": "D:\\Training-Material\\Code-Bank\\DEVOPS\\Docker\\Docker-HandsOn\\Version 8.0\\SampleApp\\SampleApp\\Program.cs",
+              "RelativeToolTip": "SampleApp\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:11:30.527Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
