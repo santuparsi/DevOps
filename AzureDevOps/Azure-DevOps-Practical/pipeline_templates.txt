@@ -1,0 +1,219 @@
+# =========================================
+# REUSABLE BUILD TEMPLATE
+# Location: templates/build-template.yml
+# =========================================
+
+parameters:
+  - name: projectPath
+    type: string
+    default: '.'
+  - name: dotnetVersion
+    type: string
+    default: '7.x'
+  - name: buildConfiguration
+    type: string
+    default: 'Release'
+  - name: runTests
+    type: boolean
+    default: true
+  - name: publishArtifact
+    type: boolean
+    default: true
+
+steps:
+  # Install .NET SDK
+  - task: UseDotNet@2
+    displayName: 'Install .NET SDK ${{ parameters.dotnetVersion }}'
+    inputs:
+      version: ${{ parameters.dotnetVersion }}
+  
+  # Restore dependencies
+  - task: DotNetCoreCLI@2
+    displayName: 'Restore NuGet Packages'
+    inputs:
+      command: 'restore'
+      projects: '${{ parameters.projectPath }}/**/*.csproj'
+  
+  # Build project
+  - task: DotNetCoreCLI@2
+    displayName: 'Build Project'
+    inputs:
+      command: 'build'
+      projects: '${{ parameters.projectPath }}/**/*.csproj'
+      arguments: '--configuration ${{ parameters.buildConfiguration }} --no-restore'
+  
+  # Run tests (conditional)
+  - ${{ if eq(parameters.runTests, true) }}:
+    - task: DotNetCoreCLI@2
+      displayName: 'Run Unit Tests'
+      inputs:
+        command: 'test'
+        projects: '${{ parameters.projectPath }}/**/*Tests.csproj'
+        arguments: '--configuration ${{ parameters.buildConfiguration }} --collect "Code coverage"'
+    
+    - task: PublishTestResults@2
+      displayName: 'Publish Test Results'
+      condition: succeededOrFailed()
+      inputs:
+        testResultsFormat: 'VSTest'
+        testResultsFiles: '**/*.trx'
+  
+  # Publish application
+  - task: DotNetCoreCLI@2
+    displayName: 'Publish Application'
+    inputs:
+      command: 'publish'
+      projects: '${{ parameters.projectPath }}/**/*.csproj'
+      arguments: '--configuration ${{ parameters.buildConfiguration }} --output $(Build.ArtifactStagingDirectory)'
+      publishWebProjects: false
+      zipAfterPublish: true
+  
+  # Publish artifact (conditional)
+  - ${{ if eq(parameters.publishArtifact, true) }}:
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Build Artifacts'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+
+---
+# =========================================
+# DEPLOYMENT TEMPLATE
+# Location: templates/deploy-template.yml
+# =========================================
+
+parameters:
+  - name: environment
+    type: string
+  - name: azureSubscription
+    type: string
+  - name: appServiceName
+    type: string
+  - name: resourceGroup
+    type: string
+  - name: requireApproval
+    type: boolean
+    default: false
+  - name: runSmokeTests
+    type: boolean
+    default: true
+
+jobs:
+  - deployment: Deploy_${{ parameters.environment }}
+    displayName: 'Deploy to ${{ parameters.environment }}'
+    environment: ${{ parameters.environment }}
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            # Download artifact
+            - download: current
+              artifact: drop
+              displayName: 'Download Build Artifact'
+            
+            # Deploy to Azure App Service
+            - task: AzureRmWebAppDeployment@4
+              displayName: 'Deploy to Azure App Service'
+              inputs:
+                azureSubscription: ${{ parameters.azureSubscription }}
+                appType: 'webApp'
+                WebAppName: ${{ parameters.appServiceName }}
+                packageForLinux: '$(Pipeline.Workspace)/drop/**/*.zip'
+                ResourceGroupName: ${{ parameters.resourceGroup }}
+            
+            # Run smoke tests (conditional)
+            - ${{ if eq(parameters.runSmokeTests, true) }}:
+              - script: |
+                  echo "Running smoke tests for ${{ parameters.environment }}..."
+                  sleep 10
+                  response=$(curl -s -o /dev/null -w "%{http_code}" https://${{ parameters.appServiceName }}.azurewebsites.net/health)
+                  if [ $response -eq 200 ]; then
+                    echo "Smoke test passed!"
+                  else
+                    echo "Smoke test failed with status: $response"
+                    exit 1
+                  fi
+                displayName: 'Run Smoke Tests'
+
+---
+# =========================================
+# MAIN PIPELINE USING TEMPLATES
+# Location: azure-pipelines.yml
+# =========================================
+
+trigger:
+  branches:
+    include:
+      - main
+      - develop
+      - release/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - group: shared-variables
+  - name: solution
+    value: '**/*.sln'
+
+stages:
+  # Build stage
+  - stage: Build
+    displayName: 'Build Application'
+    jobs:
+      - job: BuildJob
+        displayName: 'Build'
+        steps:
+          # Use the build template
+          - template: templates/build-template.yml
+            parameters:
+              projectPath: 'src'
+              dotnetVersion: '7.x'
+              buildConfiguration: 'Release'
+              runTests: true
+              publishArtifact: true
+
+  # Deploy to Development
+  - stage: Dev
+    displayName: 'Development'
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
+    jobs:
+      - template: templates/deploy-template.yml
+        parameters:
+          environment: 'dev'
+          azureSubscription: 'Azure-DevOps-Connection'
+          appServiceName: 'myapp-dev'
+          resourceGroup: 'myapp-dev-rg'
+          requireApproval: false
+          runSmokeTests: true
+
+  # Deploy to QA
+  - stage: QA
+    displayName: 'Quality Assurance'
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    jobs:
+      - template: templates/deploy-template.yml
+        parameters:
+          environment: 'qa'
+          azureSubscription: 'Azure-DevOps-Connection'
+          appServiceName: 'myapp-qa'
+          resourceGroup: 'myapp-qa-rg'
+          requireApproval: true
+          runSmokeTests: true
+
+  # Deploy to Production
+  - stage: Production
+    displayName: 'Production'
+    dependsOn: QA
+    condition: succeeded()
+    jobs:
+      - template: templates/deploy-template.yml
+        parameters:
+          environment: 'production'
+          azureSubscription: 'Azure-DevOps-Connection'
+          appServiceName: 'myapp-prod'
+          resourceGroup: 'myapp-prod-rg'
+          requireApproval: true
+          runSmokeTests: true

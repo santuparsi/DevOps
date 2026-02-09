@@ -1,0 +1,163 @@
+# Multi-Stage Pipeline: Build → Dev → QA → Production
+# Demonstrates environment deployments with approvals
+
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - group: common-variables  # Variable group from Library
+  - name: dockerRegistry
+    value: 'mycompany.azurecr.io'
+  - name: imageName
+    value: 'ecommerce-app'
+
+stages:
+  # ============================================
+  # STAGE 1: BUILD
+  # ============================================
+  - stage: Build
+    displayName: 'Build & Test'
+    jobs:
+      - job: Build
+        displayName: 'Build Application'
+        steps:
+          - task: Docker@2
+            displayName: 'Build Docker Image'
+            inputs:
+              command: 'build'
+              repository: $(imageName)
+              dockerfile: 'Dockerfile'
+              tags: |
+                $(Build.BuildId)
+                latest
+          
+          - task: Docker@2
+            displayName: 'Push to Container Registry'
+            inputs:
+              command: 'push'
+              repository: $(imageName)
+              containerRegistry: 'AzureContainerRegistry'
+              tags: |
+                $(Build.BuildId)
+                latest
+          
+          - script: |
+              echo "##vso[task.setvariable variable=imageTag;isOutput=true]$(Build.BuildId)"
+            name: setImageTag
+            displayName: 'Set Image Tag Variable'
+
+  # ============================================
+  # STAGE 2: DEPLOY TO DEV
+  # ============================================
+  - stage: DeployDev
+    displayName: 'Deploy to Development'
+    dependsOn: Build
+    condition: succeeded()
+    variables:
+      imageTag: $[ stageDependencies.Build.Build.outputs['setImageTag.imageTag'] ]
+    jobs:
+      - deployment: DeployToDev
+        displayName: 'Deploy to Dev Environment'
+        environment: 'development'  # Environment with no approval
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - script: |
+                    echo "Deploying image tag: $(imageTag)"
+                    echo "Environment: Development"
+                  displayName: 'Display Deployment Info'
+                
+                - task: AzureWebAppContainer@1
+                  displayName: 'Deploy to Azure Web App'
+                  inputs:
+                    azureSubscription: 'Azure-DevOps-Connection'
+                    appName: 'ecommerce-dev'
+                    containers: '$(dockerRegistry)/$(imageName):$(imageTag)'
+                
+                - script: |
+                    echo "Running smoke tests..."
+                    curl -f https://ecommerce-dev.azurewebsites.net/health || exit 1
+                  displayName: 'Smoke Test'
+
+  # ============================================
+  # STAGE 3: DEPLOY TO QA
+  # ============================================
+  - stage: DeployQA
+    displayName: 'Deploy to QA'
+    dependsOn: DeployDev
+    condition: succeeded()
+    variables:
+      imageTag: $[ stageDependencies.Build.Build.outputs['setImageTag.imageTag'] ]
+    jobs:
+      - deployment: DeployToQA
+        displayName: 'Deploy to QA Environment'
+        environment: 'qa'  # Environment with manual approval
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureWebAppContainer@1
+                  displayName: 'Deploy to Azure Web App QA'
+                  inputs:
+                    azureSubscription: 'Azure-DevOps-Connection'
+                    appName: 'ecommerce-qa'
+                    containers: '$(dockerRegistry)/$(imageName):$(imageTag)'
+                
+                - script: |
+                    echo "Running integration tests..."
+                  displayName: 'Integration Tests'
+
+  # ============================================
+  # STAGE 4: DEPLOY TO PRODUCTION
+  # ============================================
+  - stage: DeployProduction
+    displayName: 'Deploy to Production'
+    dependsOn: DeployQA
+    condition: succeeded()
+    variables:
+      imageTag: $[ stageDependencies.Build.Build.outputs['setImageTag.imageTag'] ]
+    jobs:
+      - deployment: DeployToProduction
+        displayName: 'Deploy to Production Environment'
+        environment: 'production'  # Environment with multiple approvers
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Blue-Green Deployment Strategy
+                - task: AzureWebAppContainer@1
+                  displayName: 'Deploy to Staging Slot'
+                  inputs:
+                    azureSubscription: 'Azure-DevOps-Connection'
+                    appName: 'ecommerce-prod'
+                    deployToSlotOrASE: true
+                    resourceGroupName: 'ecommerce-rg'
+                    slotName: 'staging'
+                    containers: '$(dockerRegistry)/$(imageName):$(imageTag)'
+                
+                - script: |
+                    echo "Warming up staging slot..."
+                    sleep 30
+                    curl -f https://ecommerce-prod-staging.azurewebsites.net/health
+                  displayName: 'Warmup & Validation'
+                
+                - task: AzureAppServiceManage@0
+                  displayName: 'Swap Staging to Production'
+                  inputs:
+                    azureSubscription: 'Azure-DevOps-Connection'
+                    action: 'Swap Slots'
+                    webAppName: 'ecommerce-prod'
+                    resourceGroupName: 'ecommerce-rg'
+                    sourceSlot: 'staging'
+                    targetSlot: 'production'
+                
+                - script: |
+                    echo "Production deployment completed!"
+                    echo "Version: $(imageTag)"
+                  displayName: 'Deployment Success Notification'
